@@ -29,6 +29,8 @@ public class TestCommonLang {
         String s1 = StringUtils.lowerCase("Abce");
         System.out.println(s1);
 
+        //str2 不同于str1的部分
+        String diff = StringUtils.difference("abc", "bc");
 
     }
 
