@@ -1,4 +1,4 @@
-
+#git忽略规则
 .idea/
 /out
 /target
