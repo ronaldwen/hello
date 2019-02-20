@@ -19,7 +19,7 @@ public class TestCommonBeanUtils {
     /**
      * 测试BeanUtils 类相关方法
      */
-    private void testBeanUtils(){
+    public void testBeanUtils(){
         User user = new User("1", "ronald", "飞", 15, "北京");
         User newU = new User();
             //拷贝对象， 浅拷贝
