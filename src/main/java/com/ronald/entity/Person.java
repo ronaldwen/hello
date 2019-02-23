@@ -16,4 +16,10 @@ public class Person {
     private String sex;
     private String rela;
 
+    public Person(int id, String name, String sex, String rela) {
+        this.id = id;
+        this.name = name;
+        this.sex = sex;
+        this.rela = rela;
+    }
 }
