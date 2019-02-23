@@ -1,9 +1,9 @@
-package com.ronald;
+package com.ronald.entity;
 
 import java.util.List;
 import java.util.Map;
 
-public class TestJson {
+public class Message {
 
 
     /**
