@@ -1,5 +1,6 @@
 package com.ronald;
 
+import org.apache.commons.lang3.ArrayUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.DateFormatUtils;
 import org.apache.commons.lang3.time.DateUtils;
@@ -13,8 +14,9 @@ public class TestCommonLang {
     public static void main(String[] args) {
 
         TestCommonLang cl = new TestCommonLang();
-        cl.testStringUtils();
-        cl.testDateUtils();
+//        cl.testStringUtils();
+//        cl.testDateUtils();
+        cl.testArrayUtils();
     }
 
     /**
@@ -51,5 +53,11 @@ public class TestCommonLang {
             e.printStackTrace();
             System.err.println("日期格式错误");
         }
+    }
+
+    public void testArrayUtils(){
+        String[] strArr = new String[]{"abc", "AB"};
+        boolean contains = ArrayUtils.contains(strArr, "AB");
+        System.err.println("是否包含：" + contains);
     }
 }
