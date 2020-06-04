@@ -14,9 +14,9 @@ public class TestCommonLang {
     public static void main(String[] args) {
 
         TestCommonLang cl = new TestCommonLang();
-//        cl.testStringUtils();
+        cl.testStringUtils();
 //        cl.testDateUtils();
-        cl.testArrayUtils();
+//        cl.testArrayUtils();
     }
 
     /**
@@ -26,6 +26,10 @@ public class TestCommonLang {
         //左侧填充
         String s = StringUtils.leftPad("1221", 3, "0");
         System.out.println("s:" + s);
+        //右侧填充
+        String sr = StringUtils.rightPad("abce", 6, "");
+        System.out.println(sr.length() + " sr:" + sr);
+
 
         //转小写
         String s1 = StringUtils.lowerCase("Abce");
@@ -33,6 +37,8 @@ public class TestCommonLang {
 
         //str2 不同于str1的部分
         String diff = StringUtils.difference("abc", "bc");
+
+
 
     }
 
